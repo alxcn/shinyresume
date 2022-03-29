@@ -5,14 +5,14 @@ source("data-raw/create_academic_badges.R", encoding = "UTF-8")
 library(shiny)
 library(magrittr, include.only = "%>%")
 
-#academic_dataset <- readr::read_csv2("data/academic_dataset.csv")
+academic_dataset <- readr::read_csv2("data/academic_dataset.csv")
 academic_badges <- readr::read_csv2("data/academic_badges.csv")
 
 # Define UI
 ui <- fluidPage(
     includeCSS("www/style.css"),
     # Application title
-    titlePanel("Publications and conference presentations"),
+    titlePanel("List of Publications"),
     
     
     # Sidebar
@@ -28,7 +28,7 @@ ui <- fluidPage(
             ),
             
             shiny::selectInput(
-                inputId = "tipo_publicacao",
+                inputId = "type_publication",
                 label = "Type of publication:",
                 choices = unique(academic_badges$type_of_publication),
                 multiple = TRUE,
