@@ -1,0 +1,11 @@
+name: shinyresume
+title:
+username:
+account: alxcn
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5967048
+bundleId: 5742632
+url: https://alxcn.shinyapps.io/shinyresume/
+when: 1648597890.49794
+lastSyncTime: 1648597890.49796
