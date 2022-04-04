@@ -42,7 +42,7 @@ ui <- fluidPage(
                 "Year:",
                 min = min(academic_badges$year, na.rm = TRUE),
                 max = max(academic_badges$year, na.rm = TRUE),
-                value = c(2019, 2021)
+                value = c(2017, 2021)
             )
             
             
